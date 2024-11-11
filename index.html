@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FMC - Find Your Dream Car</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Explore our top-quality, eco-friendly notebooks made for creativity and productivity. We're your go-to for stationery that sparks inspiration and lasts long." />
+  <meta name="keywords"
+    content="notebook, notebooks, notebook manufacturing, sustainable notebooks, eco-friendly notebooks, premium notebooks, custom notebooks, personalized notebooks, stationery, writing supplies, journal, journals, sketchbook, sketchbooks, notepad, notepads, paper notebook, spiral notebook, leather notebook, recycled paper notebook, handmade notebook, corporate notebooks, office notebooks, school notebooks, notebook design, notebook printing, notebook binding, notebook cover, notebook paper, sustainable stationery, eco-friendly stationery, customized notebooks, branded notebooks, personalized stationery, writing accessories, pen and paper, writing instruments, creative notebooks, artistic notebooks, executive notebooks, pocket notebook, travel notebook, business notebooks, promotional notebooks, notebook gift, notebook set, bulk notebooks, premium paper notebooks, office supplies, writing tools, India, Indian, Chennai, Mumbai, Delhi, Bangalore, Kolkata, Hyderabad, Ahmedabad, Pune, Surat, Jaipur, Lucknow, Kanpur, Nagpur, Visakhapatnam, Indore, Thane, Bhopal, Patna, Vadodara, Ghaziabad, Ludhiana, Agra, Nashik, Faridabad, Meerut, Rajkot, Kalyan, Dombivali, Vasai-Virar, Varanasi, Srinagar, Aurangabad, Dhanbad">
+  <meta name="author" content="FMC - Find Your Dream Car" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="FMC - Find Your Dream Car">
+  <meta itemprop="description"
+    content="Explore our top-quality, eco-friendly notebooks made for creativity and productivity. We're your go-to for stationery that sparks inspiration and lasts long.">
+  <meta itemprop="image" content="http://truecolorbooks.com/assets/images/logo.png">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <div id="main">
+    <!-- Hero Section Start -->
+    <div id="page1">
+      <div class="mob-nav">
+        <div class="nav-section" style="justify-content: left;">
+          <img src="./assets/images/icon/menu.png" class="menu-icon" alt="" onclick="toggleSidebar()">
+        </div>
+
+        <div id="sidebar" class="sidebar">
+          <img class="sidebar-logo" src="./assets/images/logo-mob.png" />
+          <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()">×</a>
+          <a href="javascript:void(0)" onclick="toggleSidebar()" class="link">HOME</a>
+          <a href="javascript:void(0)" onclick="toggleSidebar()" class="link">CARS</a>
+          <a href="javascript:void(0)" onclick="toggleSidebar()" class="link">COMPARE CAR</a>
+          <a href="javascript:void(0)" onclick="toggleSidebar()" class="link">FIND CAR</a>
+          <a href="javascript:void(0)" onclick="toggleSidebar()" class="link">BRANDS</a>
+          <a href="javascript:void(0)" onclick="toggleSidebar()" class="link">ABOUT</a>
+          <a href="javascript:void(0)" onclick="toggleSidebar()" class="link">CONTACT</a>
+        </div>
+
+        <div class="nav-section">
+          <img class="mob-logo" src="./assets/images/logo-mob.png" />
+        </div>
+
+        <div class="nav-section" style="justify-content: right;">
+          <div class="profile-cover">
+            <img class="profile-icon" src="./assets/images/icon/heart-white.png" />
+            <img class="profile-icon" src="./assets/images/icon/mob-user.png" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="nav hide-content">
+        <div class="nav-logo">
+          <img class="logo" src="./assets/images/LOGO.png" />
+        </div>
+        <div class="nav-links">
+          <a href="#" class="link nav-link-select">HOME</a>
+          <a href="#" class="link">CARS</a>
+          <a href="#" class="link">COMPARE CAR</a>
+          <a href="#" class="link">FIND CAR</a>
+          <a href="#" class="link">BRANDS</a>
+          <a href="#" class="link">ABOUT</a>
+          <a href="#" class="link">CONTACT</a>
+        </div>
+        <div class="nav-buttons">
+          <div class="wishlist-cover">
+            <img class="wishlist-icon" src="./assets/images/icon/heart.png" />
+          </div>
+          <div class="login-button">
+            <img class="login-btn-user-icon" src="./assets/images/icon/user.png" />
+            <span class="login-btb-text">LOGIN / SIGNUP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Car List Start -->
+    <div id="page2">
+      <h2 class="sub-title-text">FEATURED</h2>
+      <h2 class="title-text">FEATURED <span class="title-bold-text">CARS</span></h2>
+      <div class="car-type-cover">
+        <div class="car-type-link-cover">
+          <a href="javascript:void(0);" onclick="toggleFeatureCarActiveClass(this, 'POPULAR')"
+            class="car-type-link featured-car-link-select">POPULAR</a>
+          <a href="javascript:void(0);" onclick="toggleFeatureCarActiveClass(this, 'JUST')" class="car-type-link">JUST
+            LAUNCHED</a>
+          <a href="javascript:void(0);" onclick="toggleFeatureCarActiveClass(this, 'UPCOMING')" class="car-type-link">UPCOMING</a>
+        </div>
+
+        <div class="view-all-cover hide-content">
+          <span class="view-all-text"> VIEW ALL</span>
+          <img class="view-all-icon" src="./assets/images/icon/right-arrow.png" />
+        </div>
+      </div>
+
+      <div class="car-container show-pop">
+        <div class="car-cover">
+          <img class="car-image" src="./assets/images/cars/car-1.webp" alt="">
+          <h2 class="car-title">Citroen C3</h2>
+          <span class="car-price">$ 23K - 32K</span>
+        </div>
+
+        <div class="car-cover">
+          <img class="car-image" src="./assets/images/cars/car-2.webp" alt="">
+          <h2 class="car-title">Honda City</h2>
+          <span class="car-price">$ 45K - 80K</span>
+        </div>
+
+        <div class="car-cover">
+          <img class="car-image" src="./assets/images/cars/car-3.webp" alt="">
+          <h2 class="car-title">Honda Elevate</h2>
+          <span class="car-price">$ 45K - 60K</span>
+        </div>
+
+        <div class="car-cover">
+          <img class="car-image" src="./assets/images/cars/car-4.webp" alt="">
+          <h2 class="car-title">Skoda Slavia</h2>
+          <span class="car-price">$ 220K - 240K</span>
+        </div>
+
+        <div class="car-cover">
+          <img class="car-image" src="./assets/images/cars/car-5.webp" alt="">
+          <h2 class="car-title">Volkswagen Virtus</h2>
+          <span class="car-price">$ 320K - 420K</span>
+        </div>
+      </div>
+
+      <div class="car-container show-just">
+        <div class="car-cover">
+          <img class="car-image" src="./assets/images/cars/car-6.webp" alt="">
+          <h2 class="car-title">Honda Amaze</h2>
+          <span class="car-price">$ 23K - 32K</span>
+        </div>
+
+        <div class="car-cover">
+          <img class="car-image" src="./assets/images/cars/car-7.webp" alt="">
+          <h2 class="car-title">Lexus NX</h2>
+          <span class="car-price">$ 45K - 80K</span>
+        </div>
+
+        <div class="car-cover">
+          <img class="car-image" src="./assets/images/cars/car-8.webp" alt="">
+          <h2 class="car-title">Renault Triber</h2>
+          <span class="car-price">$ 45K - 60K</span>
+        </div>
+
+        <div class="car-cover">
+          <img class="car-image" src="./assets/images/cars/car-9.webp" alt="">
+          <h2 class="car-title">Toyota Urban Cruiser Hyryder</h2>
+          <span class="car-price">$ 220K - 240K</span>
+        </div>
+
+        <div class="car-cover">
+          <img class="car-image" src="./assets/images/cars/car-5.webp" alt="">
+          <h2 class="car-title">Volkswagen Virtus</h2>
+          <span class="car-price">$ 320K - 420K</span>
+        </div>
+      </div>
+
+      <div class="swipe-control-cover">
+        <div class="icon-cover">
+          <img src="./assets/images/icon/back.png" class="arrow-icon" alt="">
+        </div>
+        <div class="icon-cover selected-icon-cover">
+          <img src="./assets/images/icon/next.png" class="arrow-icon" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- Car List End -->
+
+    <!-- Choice Car Start -->
+    <div id="page3">
+      <h2 class="sub-title-text">CHOICE</h2>
+      <h2 class="title-text">CARS OF YOUR <span class="title-bold-text">CHOICE</span></h2>
+      <div class="car-type-cover">
+        <div class="car-type-link-cover">
+          <a href="javascript:void(0);" class="car-type-link car-type-link-select"
+            onclick="toggleActiveClass(this); toggleBodyType('budget')">BUDGET</a>
+          <a href="javascript:void(0);" class="car-type-link"
+            onclick="toggleActiveClass(this); toggleBodyType('body-type')">BODY TYPE</a>
+          <a href="javascript:void(0);" class="car-type-link" onclick="toggleActiveClass(this)">FUEL TYPE</a>
+          <a href="javascript:void(0);" class="car-type-link" onclick="toggleActiveClass(this)">TRANSMISSION</a>
+          <a href="javascript:void(0);" class="car-type-link" onclick="toggleActiveClass(this)">SEATING CAPACITY</a>
+        </div>
+
+        <div class="view-all-cover hide-content">
+          <span class="view-all-text"> VIEW ALL</span>
+          <img class="view-all-icon" src="./assets/images/icon/right-arrow.png" />
+        </div>
+      </div>
+
+      <div class="budget-container">
+        <div class="budget-box">
+          <div class="budget-text-cover">
+            <span class="budget-price">$ 20K - 50K</span>
+            <h2 class="budget-title">522 Cars</h2>
+          </div>
+          <div class="budget-car-row-container">
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-4.webp" alt="">
+            </div>
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-2.webp" alt="">
+            </div>
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-3.webp" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="budget-box">
+          <div class="budget-text-cover" style="background-color: #F6F0FE;">
+            <span class="budget-price">$ 50K - $ 100K</span>
+            <h2 class="budget-title">522 Cars</h2>
+          </div>
+          <div class="budget-car-row-container">
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-5.webp" alt="">
+            </div>
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-3.webp" alt="">
+            </div>
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-2.webp" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="budget-box">
+          <div class="budget-text-cover" style="background-color: #FDF4F4;">
+            <span class="budget-price">$ 100K - $ 200K</span>
+            <h2 class="budget-title">522 Cars</h2>
+          </div>
+          <div class="budget-car-row-container">
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-4.webp" alt="">
+            </div>
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-2.webp" alt="">
+            </div>
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-5.webp" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="budget-box">
+          <div class="budget-text-cover" style="background-color: #F3F6FE;">
+            <span class="budget-price">$ 200K - $ 400K</span>
+            <h2 class="budget-title">522 Cars</h2>
+          </div>
+          <div class="budget-car-row-container">
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-3.webp" alt="">
+            </div>
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-4.webp" alt="">
+            </div>
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-5.webp" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="budget-box">
+          <div class="budget-text-cover" style="background-color: #FEFEF3;">
+            <span class="budget-price">$ 400K - $ +500K</span>
+            <h2 class="budget-title">522 Cars</h2>
+          </div>
+          <div class="budget-car-row-container">
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-2.webp" alt="">
+            </div>
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-5.webp" alt="">
+            </div>
+            <div class="budget-car-cover">
+              <img class="budget-car-image" src="./assets/images/cars/car-3.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-type-container">
+        <div class="body-type-cover">
+          <img class="body-type-image" src="./assets/images/body-type/suv_clr.svg" alt="">
+          <span class="body-type-text">SUV</span>
+        </div>
+
+        <div class="body-type-cover">
+          <img class="body-type-image" src="./assets/images/body-type/compactsedan_clr.svg" alt="">
+          <span class="body-type-text">Compact Sedan</span>
+        </div>
+
+        <div class="body-type-cover">
+          <img class="body-type-image" src="./assets/images/body-type/convertible_clr.svg" alt="">
+          <span class="body-type-text">Convertible</span>
+        </div>
+
+        <div class="body-type-cover">
+          <img class="body-type-image" src="./assets/images/body-type/coupe_clr.svg" alt="">
+          <span class="body-type-text">Coupe</span>
+        </div>
+
+        <div class="body-type-cover">
+          <img class="body-type-image" src="./assets/images/body-type/hatchback_clr.svg" alt="">
+          <span class="body-type-text">Hatchback</span>
+        </div>
+
+        <div class="body-type-cover">
+          <img class="body-type-image" src="./assets/images/body-type/sedan_clr.svg" alt="">
+          <span class="body-type-text">Sedan</span>
+        </div>
+
+        <div class="body-type-cover">
+          <img class="body-type-image" src="./assets/images/body-type/suv_clr (1).svg" alt="">
+          <span class="body-type-text">Compact SUV</span>
+        </div>
+
+        <div class="body-type-cover">
+          <img class="body-type-image" src="./assets/images/body-type/truck_clr.svg" alt="">
+          <span class="body-type-text">Truck</span>
+        </div>
+
+        <div class="body-type-cover">
+          <img class="body-type-image" src="./assets/images/body-type/van_clr.svg" alt="">
+          <span class="body-type-text">Minivan</span>
+        </div>
+
+      </div>
+
+
+    </div>
+    <!-- Choice Car End -->
+
+    <!-- Brand List Start -->
+    <div id="page2">
+      <h2 class="sub-title-text">ALL BRANDS</h2>
+      <h2 class="title-text">CAR <span class="title-bold-text">BRANDS</span></h2>
+
+      <div class="car-type-cover" style="margin-top: 0.5vw;">
+        <div class="car-type-link-cover">
+        </div>
+
+        <div class="view-all-cover hide-content">
+          <span class="view-all-text">VIEW ALL</span>
+          <img class="view-all-icon" src="./assets/images/icon/right-arrow.png" />
+        </div>
+      </div>
+
+      <div class="brand-container" style="margin-top: 1.5vw;">
+        <div class="brand-cover">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/brilliance-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Brilliance</h2>
+        </div>
+
+        <div class="brand-cover">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/citroen-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Citroën</h2>
+        </div>
+
+        <div class="brand-cover">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/hyundai-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Hyundai</h2>
+        </div>
+
+        <div class="brand-cover hide-content">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/lexus-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Lexus</h2>
+        </div>
+
+        <div class="brand-cover hide-content">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/mazda-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Mazda</h2>
+        </div>
+
+        <div class="brand-cover hide-content">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/mercedes-benz-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Mercedes Benz</h2>
+        </div>
+
+        <div class="brand-cover hide-content">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/mini-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Mini</h2>
+        </div>
+      </div>
+
+      <div class="brand-container" style="margin-top: 1.5vw;">
+        <div class="brand-cover">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/peugeot-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Peugeot</h2>
+        </div>
+
+        <div class="brand-cover">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/wuling-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Wuling</h2>
+        </div>
+
+        <div class="brand-cover">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/opel-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Opel</h2>
+        </div>
+
+        <div class="brand-cover hide-content">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/rolls-royce-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Rolls Royce</h2>
+        </div>
+
+        <div class="brand-cover hide-content">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/suzuki-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Suzuki</h2>
+        </div>
+
+        <div class="brand-cover hide-content">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/holden-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Holden</h2>
+        </div>
+
+        <div class="brand-cover hide-content">
+          <div class="brand-image-cover">
+            <img class="brand-image" src="./assets/images/brands/great-wall-logo.png" alt="">
+          </div>
+          <h2 class="brand-title">Great Wall</h2>
+        </div>
+      </div>
+
+      <div class="swipe-control-cover">
+        <div class="icon-cover">
+          <img src="./assets/images/icon/back.png" class="arrow-icon" alt="">
+        </div>
+        <div class="icon-cover selected-icon-cover">
+          <img src="./assets/images/icon/next.png" class="arrow-icon" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- Brand List End -->
+
+    <!-- Mid Banner Start -->
+    <div id="page5"></div>
+    <!-- Mid Banner End -->
+
+    <!-- Compare Car Start -->
+    <div id="page4">
+      <h2 class="sub-title-text">COMPARISON</h2>
+      <h2 class="title-text">COMPARE <span class="title-bold-text">CARS</span></h2>
+      <div class="car-type-cover" style="margin-top: 0.5vw;">
+        <div class="car-type-link-cover"></div>
+        <div class="view-all-cover hide-content">
+          <span class="view-all-text">VIEW ALL</span>
+          <img class="view-all-icon" src="./assets/images/icon/right-arrow.png" />
+        </div>
+      </div>
+
+      <div class="compare-container">
+        <div class="compare-cars-box">
+          <div class="car-box">
+            <img class="compare-car-img" src="./assets/images/cars/car-2.webp" alt="">
+            <h2 class="car-title">Skoda Slavia</h2>
+            <span class="car-price">$ 23K - $ 32K</span>
+          </div>
+          <div class="car-box">
+            <img class="compare-car-img" src="./assets/images/cars/car-3.webp" alt="">
+            <h2 class="car-title">Skoda Slavia</h2>
+            <span class="car-price">$ 23K - $ 32K</span>
+          </div>
+
+          <div class="compare-line"></div>
+          <div class="compare-icon">
+            <img src="./assets/images/icon/swap.png" class="swap-icon" alt="">
+          </div>
+          <div class="compare-car-button">
+            <span class="compare-btb-text">COMPARE CARS</span>
+            <img class="compare-btn-arrow-icon" src="./assets/images/icon/right-arrow-white.png" />
+          </div>
+        </div>
+
+        <div class="compare-cars-box">
+          <div class="car-box">
+            <img class="compare-car-img" src="./assets/images/cars/car-4.webp" alt="">
+            <h2 class="car-title">Skoda Slavia</h2>
+            <span class="car-price">$ 23K - $ 32K</span>
+          </div>
+
+          <div class="car-box">
+            <img class="compare-car-img" src="./assets/images/cars/car-5.webp" alt="">
+            <h2 class="car-title">Skoda Slavia</h2>
+            <span class="car-price">$ 23K - $ 32K</span>
+          </div>
+
+          <div class="compare-line"></div>
+
+          <div class="compare-icon">
+            <img src="./assets/images/icon/swap.png" class="swap-icon" alt="">
+          </div>
+
+          <div class="compare-car-button">
+            <span class="compare-btb-text">COMPARE CARS</span>
+            <img class="compare-btn-arrow-icon" src="./assets/images/icon/right-arrow-white.png" />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Compare Car End -->
+
+    <!-- FAQ Start -->
+    <div class="faq-container">
+      <h2 class="sub-title-text">FAQ</h2>
+      <h2 class="title-text" style="margin-bottom: 2vw;">HAVE <span class="title-bold-text">QUESTION?</span></h2>
+
+      <div class="faq-item active">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">+</span>
+          <span class="faq-title">How do I start searching for a car?</span>
+        </div>
+        <div class="faq-answer">
+          <p>Simply start by selecting your preferred car type (SUV, Sedan, Hatchback, etc.), then filter your search
+            based on criteria like brand, price range, fuel type, and other specifications. You can also compare
+            multiple cars to see which one suits you best.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">+</span>
+          <span class="faq-title">Can I compare cars on your platform?</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! Our platform allows you to compare multiple cars side-by-side, including specifications, features,
+            pricing, and other important details. This helps you easily make a choice based on what fits your needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">+</span>
+          <span class="faq-title">Do I need to register to use the platform?</span>
+        </div>
+        <div class="faq-answer">
+          <p>No, registration is not required to search for cars or view their details. However, if you want to save
+            your searches or receive personalized recommendations, you can create an account for free.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">+</span>
+          <span class="faq-title">How accurate is the car information provided?</span>
+        </div>
+        <div class="faq-answer">
+          <p>We provide up-to-date information sourced directly from car manufacturers, dealerships, and trusted car
+            review sources. However, we recommend checking with dealers for the most current availability and prices.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">+</span>
+          <span class="faq-title">How can I filter cars based on my budget?</span>
+        </div>
+        <div class="faq-answer">
+          <p>You can set a price range filter to find cars within your budget. This filter allows you to select a
+            minimum and maximum price to narrow down your search to only those cars that fit within your desired price
+            range.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span class="faq-icon">+</span>
+          <span class="faq-title">Can I find both new and used cars on the platform?</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, our platform offers both new and used cars. You can filter your search to display only new cars, used
+            cars, or a combination of both.</p>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ End -->
+
+    <!-- Footer Start -->
+    <div id="page6">
+      <div class="footer-section">
+        <h2 class="footer-title">
+          TOP BRANDS
+        </h2>
+        <span class="footer-link">Brilliance</span>
+        <span class="footer-link">Rolls Royce</span>
+        <span class="footer-link">Great Wall</span>
+        <span class="footer-link">Mercedes Benz</span>
+        <span class="footer-link">Peugeot</span>
+        <span class="footer-link">Holden</span>
+      </div>
+      <div class="footer-section">
+        <h2 class="footer-title">
+          INFORMATION
+        </h2>
+        <span class="footer-link">Blogs</span>
+        <span class="footer-link">Newsroom</span>
+        <span class="footer-link">Terms & Conditions</span>
+        <span class="footer-link">Privacy Policy</span>
+        <span class="footer-link">Refund and Return</span>
+        <span class="footer-link">Shipping Policy</span>
+      </div>
+      <div class="footer-section">
+        <h2 class="footer-title">
+          SUPPORT
+        </h2>
+        <span class="footer-link">About Us</span>
+        <span class="footer-link">Contact Us</span>
+        <span class="footer-link">Order Tracking</span>
+        <span class="footer-link">Privacy Policy</span>
+        <span class="footer-link">FAQ</span>
+        <span class="footer-link">All Products</span>
+      </div>
+      <div class="footer-section footer-big-section">
+        <h2 class="footer-title">
+          CONTACT US
+        </h2>
+        <span class="footer-link">Third Floor, Kiran, Umra Rd, near Umra village, Sayan, Gujarat 394130</span>
+        <span class="footer-link">Timing: 10:00 AM to 7:00 PM, Monday to Sunday (IST)</span>
+        <span class="footer-link">+1 8976747588</span>
+        <span class="footer-link">info@findmycar.com</span>
+      </div>
+      <div class="footer-section footer-big-section">
+        <h2 class="footer-title">
+          NEWSLETTER SIGN-UP
+        </h2>
+        <span class="footer-link">Stay in the loop! Be the first to know about new arrivals, exclusive deals, and much
+          more.</span>
+        <input class="email-input" type="text" placeholder="Enter Your Email" />
+
+        <div class="social-icons-contner">
+          <div class="social-icon-cover">
+            <img src="./assets/images/social-icon/tik-tok.png" alt="" class="social-icon">
+          </div>
+          <div class="social-icon-cover">
+            <img src="./assets/images/social-icon/facebook.png" alt="" class="social-icon">
+          </div>
+          <div class="social-icon-cover">
+            <img src="./assets/images/social-icon/instagram.png" alt="" class="social-icon">
+          </div>
+          <div class="social-icon-cover">
+            <img src="./assets/images/social-icon/youtube.png" alt="" class="social-icon">
+          </div>
+          <div class="social-icon-cover">
+            <img src="./assets/images/social-icon/whatsapp.png" alt="" class="social-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copy Start -->
+    <div id="page7">
+      <p class="copy-text">&copy; <span id="year"></span> FYM - FIND MY CAR. ALL RIGHTS RESERVED.</p>
+    </div>
+    <!-- Copy End -->
+
+
+  </div>
+
+  <!-- Script Start -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+    integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+    integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./assets/js/script.js"></script>
+  <!-- Script Over -->
+</body>
+
+</html>
