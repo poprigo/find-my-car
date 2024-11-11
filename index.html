@@ -9,10 +9,12 @@
   <title>Find and Compare Cars Online | Best Car Selection Platform</title>
 
   <!-- Meta Description -->
-  <meta name="description" content="Discover the best cars suited to your needs with our easy-to-use car comparison platform. Compare all car models based on type, budget, fuel efficiency, and more to find the perfect car for you.">
-  
+  <meta name="description"
+    content="Discover the best cars suited to your needs with our easy-to-use car comparison platform. Compare all car models based on type, budget, fuel efficiency, and more to find the perfect car for you.">
+
   <!-- Meta Keywords -->
-  <meta name="keywords" content="car comparison, find cars online, best car selection, compare SUVs, compare sedans, buy cars online, car finder, best cars for budget, car information">
+  <meta name="keywords"
+    content="car comparison, find cars online, best car selection, compare SUVs, compare sedans, buy cars online, car finder, best cars for budget, car information">
 
   <!-- Canonical Link -->
   <link rel="canonical" href="https://poprigo.github.io/find-my-car/">
@@ -20,15 +22,19 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Find and Compare Cars Online | Best Car Selection Platform">
-  <meta property="og:description" content="Discover the best cars suited to your needs with our easy-to-use car comparison platform. Compare all car models based on type, budget, fuel efficiency, and more.">
+  <meta property="og:description"
+    content="Discover the best cars suited to your needs with our easy-to-use car comparison platform. Compare all car models based on type, budget, fuel efficiency, and more.">
   <meta property="og:url" content="https://poprigo.github.io/find-my-car/">
-  <meta property="og:image" content="https://raw.githubusercontent.com/poprigo/find-my-car/refs/heads/main/assets/images/LOGO.png">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/poprigo/find-my-car/refs/heads/main/assets/images/LOGO.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Find and Compare Cars Online | Best Car Selection Platform">
-  <meta name="twitter:description" content="Discover the best cars suited to your needs with our easy-to-use car comparison platform. Compare all car models based on type, budget, fuel efficiency, and more.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/poprigo/find-my-car/refs/heads/main/assets/images/LOGO.png">
+  <meta name="twitter:description"
+    content="Discover the best cars suited to your needs with our easy-to-use car comparison platform. Compare all car models based on type, budget, fuel efficiency, and more.">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/poprigo/find-my-car/refs/heads/main/assets/images/LOGO.png">
 
   <!-- Structured Data (JSON-LD) for Car Comparison Schema -->
   <script type="application/ld+json">
@@ -69,7 +75,8 @@
   <meta itemprop="name" content="Find and Compare Cars Online | Best Car Selection Platform">
   <meta itemprop="description"
     content="Discover the best cars suited to your needs with our easy-to-use car comparison platform. Compare all car models based on type, budget, fuel efficiency, and more to find the perfect car for you.">
-  <meta itemprop="image" content="https://raw.githubusercontent.com/poprigo/find-my-car/refs/heads/main/assets/images/LOGO.png">
+  <meta itemprop="image"
+    content="https://raw.githubusercontent.com/poprigo/find-my-car/refs/heads/main/assets/images/LOGO.png">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -79,11 +86,22 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/login.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" />
 </head>
 
 <body>
+
+  <!-- Password Screen -->
+  <div id="auth">
+    <div id="password-screen">
+      <img src="./assets/images/LOGO.png" alt="Logo" class="pass-logo">
+      <input type="number" class="password-input" placeholder="Enter Password" id="password-input" maxlength="4">
+      <button class="continue-btn" onclick="checkPassword()">Continue</button>
+    </div>
+  </div>
+
   <div id="main">
     <!-- Hero Section Start -->
     <div id="page1">
@@ -153,7 +171,8 @@
             class="car-type-link featured-car-link-select">POPULAR</a>
           <a href="javascript:void(0);" onclick="toggleFeatureCarActiveClass(this, 'JUST')" class="car-type-link">JUST
             LAUNCHED</a>
-          <a href="javascript:void(0);" onclick="toggleFeatureCarActiveClass(this, 'UPCOMING')" class="car-type-link">UPCOMING</a>
+          <a href="javascript:void(0);" onclick="toggleFeatureCarActiveClass(this, 'UPCOMING')"
+            class="car-type-link">UPCOMING</a>
         </div>
 
         <div class="view-all-cover hide-content">

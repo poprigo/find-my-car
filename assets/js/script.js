@@ -47,7 +47,7 @@ function toggleActiveClass(element) {
     element.classList.add('car-type-link-select');
 }
 
-function toggleFeatureCarActiveClass(element,car) {
+function toggleFeatureCarActiveClass(element, car) {
     // Remove 'car-type-link-select' class from all links
     const links = document.querySelectorAll('.car-type-link');
     links.forEach(link => link.classList.remove('featured-car-link-select'));
@@ -57,13 +57,13 @@ function toggleFeatureCarActiveClass(element,car) {
     const show_pop = document.querySelector('.show-pop');
     const show_just = document.querySelector('.show-just');
 
-    if(car === 'POPULAR'){
+    if (car === 'POPULAR') {
         show_pop.style.display = "flex";
         show_just.style.display = "none";
-    }else if(car === 'JUST'){
+    } else if (car === 'JUST') {
         show_pop.style.display = "none";
         show_just.style.display = "flex";
-    }else {
+    } else {
         show_pop.style.display = "flex";
         show_just.style.display = "none";
     }
@@ -71,29 +71,40 @@ function toggleFeatureCarActiveClass(element,car) {
 
 function toggleFAQ(element) {
     const faqItem = element.closest('.faq-item');
-    
+
     // Toggle the active class to open/close the FAQ item
     faqItem.classList.toggle('active');
-    
+
     // Change icon between "+" and "-" on toggle
     const icon = faqItem.querySelector('.faq-icon');
     if (faqItem.classList.contains('active')) {
-      icon.textContent = '+';
+        icon.textContent = '+';
     } else {
-      icon.textContent = '+';
+        icon.textContent = '+';
     }
-  }
-  
-  // Default open the first FAQ
-  document.addEventListener('DOMContentLoaded', () => {
+}
+
+// Default open the first FAQ
+document.addEventListener('DOMContentLoaded', () => {
     const firstFAQ = document.querySelector('.faq-item');
     firstFAQ.classList.add('active');
     firstFAQ.querySelector('.faq-icon').textContent = '+';
-  });
+});
 
-  function toggleSidebar() {
+function toggleSidebar() {
     const sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("active");
-  }
+}
+
+function checkPassword() {
+    const passwordInput = document.getElementById("password-input").value;
+
+    if (passwordInput === "1997") {
+        document.getElementById("main").style.display = "flex";
+        document.getElementById("auth").style.display = "none";
+    } else {
+        alert("Incorrect password. Please try again.");
+    }
+}
 
 document.getElementById("year").textContent = new Date().getFullYear();
