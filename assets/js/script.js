@@ -100,8 +100,12 @@ function checkPassword() {
     const passwordInput = document.getElementById("password-input").value;
 
     if (passwordInput === "1997") {
-        document.getElementById("main").style.display = "flex";
         document.getElementById("auth").style.display = "none";
+        setTimeout(() => {
+            document.getElementById("main").style.display = "flex";
+            
+            window.dispatchEvent(new Event('resize'));
+          }, 50);
     } else {
         alert("Incorrect password. Please try again.");
     }

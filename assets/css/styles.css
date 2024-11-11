@@ -44,7 +44,6 @@ body {
 }
 
 #main {
-  position: relative;
   overflow: hidden;
   background-color: #ffffff;
   display: none;
